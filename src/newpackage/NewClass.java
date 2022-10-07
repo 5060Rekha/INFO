@@ -4,6 +4,9 @@
  */
 package newpackage;
 
+import java.util.Date;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author sajja
@@ -13,12 +16,13 @@ public class NewClass {
     private int EID;
     private String Age;
     private String Gender;
-    private String StartDate;
+    private Date StartDate;
     private String Level;
     private String TeamInfo;
     private String PositionTitle;
     private String Phone;
     private String Email;
+    private ImageIcon photo;
 
     public String getName() {
         return Name;
@@ -52,11 +56,11 @@ public class NewClass {
         this.Gender = Gender;
     }
 
-    public String getStartDate() {
+    public Date getStartDate() {
         return StartDate;
     }
 
-    public void setStartDate(String StartDate) {
+    public void setStartDate(Date StartDate) {
         this.StartDate = StartDate;
     }
 
@@ -99,6 +103,20 @@ public class NewClass {
     public void setEmail(String Email) {
         this.Email = Email;
     }
+
+    public ImageIcon getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(ImageIcon photo) {
+        this.photo = photo;
+    }
+
+    @Override
+    public String toString() {
+        return Integer.toString(EID);
+    }
   
+    
     
 }
